@@ -84,7 +84,29 @@
 // const filteredArray = filterNumbers();
 // console.log(filteredArray); // Output: [48, 12, 96]
 // PROBLEM#5
-Async Functions: An async function is a special type of function that allows the use of the await keyword inside it. The async keyword is added before the function declaration to indicate that it will contain asynchronous operations.
+// Async Functions: An async function is a special type of function that allows the use of the await keyword inside it. The async keyword is added before the function declaration to indicate that it will contain asynchronous operations.
 
-Await: The await keyword can only be used inside an async function. It pauses the execution of the function until the awaited promise is resolved or rejected. While waiting, it doesn't block the execution of the whole program, allowing other tasks to continue.
+// Await: The await keyword can only be used inside an async function. It pauses the execution of the function until the awaited promise is resolved or rejected. While waiting, it doesn't block the execution of the whole program, allowing other tasks to continue.
 
+// PROS
+// Improved Readability: Async/await provides a more intuitive and synchronous-like way to write asynchronous code, making it easier to understand and debug.
+
+// Error Handling: Error handling is simplified with try/catch blocks, allowing for more concise and centralized error handling.
+
+// Sequential Execution: Async/await allows for writing asynchronous code in a sequential manner, which can be easier to reason about and debug.
+// CONS
+// Compatibility: Async/await requires modern versions of JavaScript. It may not be supported in older browsers or environments without transpilation or polyfills.
+
+// Learning Curve: Understanding and working with async/await may require developers to be familiar with promises and asynchronous programming concepts.
+// async function fetchData() {
+//     try {
+//       const response = await fetch('https://api.example.com/data');
+//       const data = await response.json();
+//       console.log(data);
+//     } catch (error) {
+//       console.error('Error:', error);
+//     }
+//   }
+  
+//   fetchData();
+  
